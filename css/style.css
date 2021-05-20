@@ -1,0 +1,142 @@
+/*To display 3 column per row set grid-template-column property to 3*/
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+header {
+	border: 1px solid #FFFFFF;
+}
+.strip {
+    background: #333;
+    height: 7px;
+    opacity: 0.44;
+    margin-bottom: -7px;
+}
+h1 {
+    text-align: center;
+    font-weight: 100;
+    color: #333;
+}
+.card {
+    list-style: none;
+    font-size: 6em;
+	padding: 0.4em 0.9em;
+    margin: 0px -3px;
+    font-weight: 100;
+	display: inline-block;
+    color: #fff;
+}
+aside {
+    float: right;
+}
+section {
+    overflow: hidden;
+    min-height: 170px;
+}
+.container {
+    width: 960px;
+    background: #EFEFEF;
+	margin: 0 auto;
+}
+.card3,
+.card5,
+.card9 {
+    background: #2F454E;
+}
+.card2,
+.card4 {
+    background: #2B8EAD;
+}
+.card1,
+.card8 {
+    background: #6F98A8;
+}
+.card6,
+.card7 {
+    background: #BFBFBF;
+}
+.btn {
+    display: block;
+    width: 240px;
+    font-family: inherit;
+    font-size: 16px;
+    margin: 25px 22px 0 10px;
+    padding: 0.7em 2em;
+	background: #72c3dc;
+    color: #fff;
+    border-radius: 5px;
+	box-shadow: 0px 3px 0px #2B8EAD;
+    text-shadow: 1px 1px 1px #2B8EAD;
+    border: 1px solid #2B8EAD;
+}
+.btn:active {
+	top: 3px;
+	position: relative;
+}
+footer {	
+	padding: 5px;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1000px) {
+	/*To display 1 column per row on smaller screen set grid-template-column property to 1*/
+	.card-container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}	
+	.card {
+        padding: 0.3em;
+        margin: 0.04em;
+        color: #333;
+        font-size: 3em;
+        text-align: center;
+		background: #efefef;
+        margin-bottom: 5px;
+    }
+	.card1,
+	.card8 {
+		border-left: 0.4em solid #6F98A8;
+	}
+	.card2,
+	.card4 {
+		border-left: 0.4em solid #2B8EAD;
+	}
+	.card3,
+	.card5,
+	.card9 {
+		border-left: 0.4em solid #2F454E;
+	}
+	.card6,
+	.card7 {
+		border-left: 0.4em solid #BFBFBF;
+	}
+   
+	.container {
+        background: #FFFFFF;
+        width: 100%;
+    }
+    .strip {
+        display: none;
+    }
+    aside {
+        float: none;
+        margin: 1em;
+        width: auto;
+		text-align: center;
+    }
+    header {
+        background: #333;
+        color: #FFFFF;
+    }
+    h1 {
+        color: #fff;
+        height: 60px;
+    }
+    .btn {
+        padding: 15px 25px;
+        display: inline-block;
+        margin: 10px;
+        width: 135px;
+    }
+}
