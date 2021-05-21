@@ -20,15 +20,16 @@ sortAndShuffle  = (sort = false) => {
 	for(let i = 0; i < cards.length; i++) {
         cardRef.appendChild(cards[i]);
     }
-}  
+} 
 
 /* If want to create Card blocks dynamically we can call this function on body onload event*/
-/* createGridNodes = () => {
+
+/* createUlNodes = () => {
 	for(let i = 1; i<=9;i++) {
-	let x = document.createElement("div");
-	let t = document.createTextNode(i);
-	x.appendChild(t);
-	x.setAttribute("class","card card"+i);
-   document.getElementById("Cards").appendChild(x);
+		let x = document.createElement("div");
+		let t = document.createTextNode(i);
+		x.appendChild(t);
+		x.setAttribute("class","card card"+i);
+		document.getElementById("Cards").appendChild(x);
  }
 }  */
