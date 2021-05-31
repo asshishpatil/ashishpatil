@@ -16,7 +16,7 @@ shuffleCards = (cards) => {
 sortAndShuffle  = (sort = false) => {
 	cardRef 	= (!Boolean(cardRef)) ? document.getElementById("Cards") : cardRef;  
 	sortedCards = (!Boolean(sortedCards)) ? [...cardRef.children] : sortedCards;
-	let cards 	= (sort) ? sortedCards : shuffleCards(cardRef.children);
+	let cards 	= (sort) ? sortedCards : shuffleCards([...cardRef.children]);
 	for(let i = 0; i < cards.length; i++) {
         cardRef.appendChild(cards[i]);
     }
